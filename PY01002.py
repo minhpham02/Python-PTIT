@@ -1,0 +1,6 @@
+a = list(input())
+b = int(a[0])
+c = int(a[4])
+d = int(a[8])
+if(b + c == d): print("YES")
+else: print("NO")
