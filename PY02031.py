@@ -8,13 +8,12 @@ def isPrime(n):
             return False
     return True
 
-n,m = int(input())
-a = [[int(j) for j in input().split()] for i in range(n)]
+n, m = map(int, input().split())
+a = []
+for i in range(n):
+    a.append([int(j) for j in input().split()])
 for i in range(n):
     for j in range(m):
-        if isPrime(a[i][j]):
-            a[i][j] = 1
-        else:
-            a[i][j] = 0
-print(a)
+        print ("1 " if isPrime(a[i][j]) else "0 ", end='')
+    print()
 
